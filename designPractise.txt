@@ -1,25 +1,25 @@
 ----------------------------------------------------------------------------------------
 Any page has multiple components at a given time.
-Each component is depended on the css and html elements but the data inside those elements come from servers.
-So each elements needs rendering but also needs kind of dataprocessing.
-In order to create jsx- kind of processed html with css and javascript ready to put on the user screen ,supported by node and also by many browser javascripts.
+Each component is depended on the CSS and html elements but the data inside those elements come from servers.
+So each elements needs rendering but also needs kind of data processing.
+In order to create JSX - kind of processed html with CSS and java script ready to put on the user screen ,supported by node and also by many browsers.
     multiple steps are needed.--
     1:- fetching the appropriate data to be rendered
-    2:- creating jsx element
-    3:- displaying the jsx
+    2:- creating JSX element
+    3:- displaying the JSX
 
-It takes time to process the fetched data to be converted to jsx.
+It takes time to process the fetched data to be converted to JSX.
 
 The point of following this design is to make your website more optimize and fast.
 
-Use an global object or array that will store the jsx elemets.
+Use an global object or array that will store the JSX Elements.
 Make sure that the next data require to render is fetched after the first fetch is completed.
-Main step:-- Then fetch next data and find a way to process that data and put it in the global variable array with index as the value of object and key should be the event that will accure to display the element.
+Main step:-- Then fetch next data and find a way to process that data and put it in the global variable array with index as the value of object and key should be the event that will occur to display the element.
 
-Foloow the main step  with little logic so that your web application won't take much time for any events like next page or next data to be fetch and process and display .
-The only time to display next page or elements will be the time taken for finding the event from the global object and pointing the value of index of the global array for the jsx elemet or elemets.
+Follow the main step  with little logic so that your web application won't take much time for any events like next page or next data to be fetch and process and display .
+The only time to display next page or elements will be the time taken for finding the event from the global object and pointing the value of index of the global array for the JSX Element or Elements.
 
-Cache your global variables into user's cookie or service worker for offline approch or better optimizing slow internet speed:- because it's batter to display single feed with data in it then fetching whole page and taking more time to load the page. User don't wait that mauch and will leave your website.
+Cache your global variables into user's cookie or service worker for offline approach or better optimizing slow internet speed:- because it's batter to display single feed with data in it then fetching whole page and taking more time to load the page. User don't wait that much and will leave your website.
 
 You can use the same principle to load your images, audio or videos.
 --------------------------------------------------------------------------By Jay Patel ::)  
